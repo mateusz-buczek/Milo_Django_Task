@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    {% block head %}
+        <title>Django Task for Milo</title>
+    {% endblock %}
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand">Welcome!</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'custom_user:profiles' %}">
+                <button class="btn btn-outline-primary" type="button" name="home">Home
+                    <span class="sr-only">(current)</span>
+                </button>
+            </a>
+          </li>
+          <li class="nav-link active">
+              <a href="{% url 'custom_user:create' %}">
+                  <button class="btn btn-outline-primary" type="button" name="adduser">New User</button>
+              </a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+            {% if not user.is_authenticated %}
+                Not logged in
+            {% else %}
+                Logged in as <strong>{{ user }}</strong>
+            {% endif %}
+        </span>
+      </div>
+    </nav>
+
+    <div class="container">
+        {% block body %}
+        {% endblock %}
+    </div>
+<footer>Author: Mateusz Buczek</footer>
+</body>
+</html>

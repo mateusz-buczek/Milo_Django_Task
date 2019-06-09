@@ -1,0 +1,36 @@
+{% extends "custom_user/base.html" %}
+
+{% block head %}
+    <title>List of Users</title>
+{% endblock %}
+
+{% block body %}
+<h1> Users</h1>
+    <a href="{% url 'custom_user:download' %}">
+        <button type="button" class="btn btn-outline-info btn-sm btn-block">Download whole list in .csv format</button>
+    </a>
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th scope="col">Username</th>
+                <th scope="col">Birthday</th>
+                <th scope="col">Eligible</th>
+                <th scope="col">Random Number</th>
+                <th scope="col">BizzFuzz</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% load users_extras %}
+            {% for user in object_list %}
+               <tr>
+                <th scope="row"><a href="{% url 'custom_user:details' pk=user.user.pk %}">{{ user.user }}</a></th>
+                <td>{{ user.birth_date }}</td>
+                <td>{{ user.birth_date|is_eligible }}</td>
+                <td>{{ user.random_number }}</td>
+                <td>{{ user.random_number|bizz_fuzz }}</td>
+
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+{% endblock %}

@@ -1,0 +1,83 @@
+
+
+admin; 2000-05-06; allowed; 15; BizzFuzz
+
+test1; 2010-05-06; blocked; 17; 17
+
+test2; None; blocked; 83; 83
+
+test4; None; blocked; 66; Bizz
+
+test5; None; blocked; 61; 61
+
+test6; None; blocked; 37; 37
+
+test7; 2000-05-06; allowed; 30; BizzFuzz
+
+test8; None; blocked; 91; 91
+
+test9; None; blocked; 55; Fuzz
+
+test11; None; blocked; 7; 7
+
+test12; None; blocked; 19; 19
+
+test13; None; blocked; 44; 44
+
+test14; None; blocked; 61; 61
+
+test16; None; blocked; 37; 37
+
+test17; None; blocked; 44; 44
+
+test18; None; blocked; 47; 47
+
+test19; None; blocked; 94; 94
+
+test20; None; blocked; 92; 92
+
+test21; None; blocked; 91; 91
+
+test22; None; blocked; 28; 28
+
+test23; None; blocked; 53; 53
+
+test24; None; blocked; 72; Bizz
+
+test25; None; blocked; 35; Fuzz
+
+test26; None; blocked; 42; Bizz
+
+test27; None; blocked; 86; 86
+
+test28; None; blocked; 99; Bizz
+
+test29; None; blocked; 59; 59
+
+test30; None; blocked; 60; BizzFuzz
+
+test31; None; blocked; 91; 91
+
+test32; None; blocked; 93; Bizz
+
+test33; None; blocked; 59; 59
+
+test34; None; blocked; 51; Bizz
+
+test3; None; blocked; 76; 76
+
+test36; None; blocked; 3; Bizz
+
+test37; None; blocked; 43; 43
+
+test38; None; blocked; 33; Bizz
+
+test39; None; blocked; 76; 76
+
+test40; None; blocked; 71; 71
+
+test41; None; blocked; 27; Bizz
+
+test42; None; blocked; 94; 94
+
+test43; 1989-10-26; allowed; 42; Bizz

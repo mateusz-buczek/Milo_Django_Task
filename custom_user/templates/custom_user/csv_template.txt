@@ -1,0 +1,4 @@
+{% load users_extras %}
+{% for user in data %}
+{{ user.user|addslashes }}; {{ user.birth_date|addslashes }}; {{ user.birth_date|is_eligible|addslashes }}; {{ user.random_number }}; {{ user.random_number|bizz_fuzz }}
+{% endfor %}
