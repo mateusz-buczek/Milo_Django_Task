@@ -6,9 +6,9 @@ in directory of your choice run command line and type:
 $ git clone https://github.com/mateusz-buczek/Milo_Django_Task.git
 
 ```
-go to your dir 
+go to Milo_Django_Task in your dir (<your_dir>/Milo_Django_Task)
 ```
-$ cd <your_dir>/Milo_Django_Task
+$ cd Milo_Django_Task
 ```
 create virtual environment 
 
