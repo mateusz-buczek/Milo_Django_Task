@@ -3,12 +3,12 @@
 # installation instructions 
 in directory of your choice run command line and type:
 ```
-$ git clone https://github.com/mateusz-buczek/Task_2.git
+$ git clone https://github.com/mateusz-buczek/Milo_Django_Task.git
 
 ```
 go to your dir 
 ```
-$ cd <your_dir>/Task_2
+$ cd <your_dir>/Milo_Django_Task
 ```
 create virtual environment 
 
